@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+    <header >
+        <section class="menu">
+            <div class="left-menu">
+                <h1>HackLikeBerlin</h1>
+            </div>
+            <div class="right-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>content</li>
+                </ul>
+            </div>
+        </section>
+    </header> <br><br><br>
+
+    <main >
+        <section class="user-container  login-section-display" >
+            <div class="register ">
+                <div class="grid-two-col">
+            <div class="form-txt">
+                <h2>Welcome In HackLikeBerlin</h2>
+                <p>To Keep Connected With Us Please Login With Your Personal Info</p>
+                <button class="log-btn">Login</button>
+            </div>
+                
+                <div class="user-data">
+                    <div class="create-account">
+                        <h2>Create Account</h2>
+                        <p> Or User Your Email For Registraction</p>
+                    
+                    <form action="#">
+                        <div class="input-fields">
+                            <input type="text" name="#" id="username" placeholder="Name">
+                        </div>
+                        <div class="input-fields">
+                            <input type="email" name="#" id="email" placeholder="Email Id">
+                        </div>
+                        <div class="input-fields">
+                            <input type="password" name="#" id="password" placeholder="password">
+                        </div>
+                        <div class="input-fields">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         
+            </form>
+            <div class="login">
+                <div class="grid-two-col">
+                <div class="form-txt">
+                    <h2>Hello Friends</h2>
+                    <p>To Keep Connected With Us Please Login With Your Personal Info</p>
+                    <button class="reg-btn">Register</button>
+                </div>
+                <div class="user-data">
+                    <div class="create-account">
+                        <h2>Sign In</h2>
+                        <p> Or User Your Email For Registraction</p>
+                    
+                    <form action="#">
+                        <div class="input-fields">
+                            <input type="email" name="#" id="email" placeholder="Email">
+                        </div>
+                        <div class="input-fields">
+                            <input type="password" name="#" id="password" placeholder="password">
+                        </div>
+                        <div class="input-fields">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         
+            </form>
+        </section>
+       
+           
+        
+    </main>
+
+
+    <script>
+        const user_con = document.querySelector('.user-container');
+        const reg_btn = document.querySelector('.reg-btn');
+        const log_btn = document.querySelector('.log-btn');
+
+        reg_btn.addEventListener('click',() => {
+            user_con.classList.add('login-section-display')
+        })
+        log_btn.addEventListener('click',() => {
+            user_con.classList.remove('login-section-display')
+        })
+    </script>
+</body>
+</html>

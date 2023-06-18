@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: url(images/peakpx2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.menu{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.left-menu h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+
+}
+.right-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 7rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: brown;
+    
+}
+.right-menu li:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-two-col{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.register,.login{
+    min-height: 30vh;
+    min-width: 40vw;
+    
+}
+ 
+.form-txt{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('images/peakpx1.jpg');
+    background-size: cover;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px 10px rgba(0,0,0,0.4);
+}
+.form-txt h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.form-txt p {
+    width: 30ch;
+    text-align: center;
+    margin: 2rem; 
+    font-size: 1.2rem;
+}
+.form-txt .reg-btn,.log-btn{
+    width: 20vh;
+    height: 7vh;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 5px solid whitesmoke;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.create-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-image: url('images/peakpx.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px 10px rgba(0,0,0,0.4);
+}
+
+.create-account h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.create-account p {
+    text-align: center;
+    margin: 1.5rem; 
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+input{
+    width: 20rem;
+    margin: 0.5rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.4rem;
+
+}
+input[type=submit]{
+    background-color: goldenrod;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.register:not(.login-section-display){
+    display: none;
+}
+.login-section-display .login{
+    display: none;
+}
+
+.login-section-display .register{
+    display: block;
+}
+
+
